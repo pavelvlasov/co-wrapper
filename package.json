@@ -1,0 +1,34 @@
+{
+  "name": "co-wrapper",
+  "version": "0.0.1",
+  "description": "Wrap each function in object with a thunk. Useful for generator-based flow control such as co.",
+  "main": "index.js",
+  "dependencies": {
+    "thunkify": "~2.1.2"
+  },
+  "devDependencies": {
+    "mocha-co": "^1.17.1-co.1"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --harmony --reporter spec spec/test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/freakycue/co-wrapper.git"
+  },
+  "keywords": [
+    "co",
+    "thunkify",
+    "wrapper",
+    "generator",
+    "flow",
+    "control",
+    "thunk"
+  ],
+  "author": "Pavel Vlasov <freakycue@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/freakycue/co-wrapper/issues"
+  },
+  "homepage": "https://github.com/freakycue/co-wrapper"
+}
