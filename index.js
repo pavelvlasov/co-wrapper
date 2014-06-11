@@ -7,7 +7,7 @@ module.exports = function(source, options) {
   var wrapper = {},
     options = options || {},
     exclude = options.exclude || [],
-    properties = options.properties;
+    properties = options.properties || {};
 
   Object.keys(source).forEach(function(key) {
     wrapper[key] = source[key];
