@@ -1,6 +1,5 @@
 # co-wrapper
-==========
-Wrap each function in object with a thunk. Useful for generator-based flow control such as co.
+Wrap each function in object with a thunk. Useful for generator-based flow control such as [co](https://github.com/visionmedia/co).
 ## How to use it
 ```js
 var EventEmitter = require('events').EventEmitter,
@@ -69,7 +68,7 @@ var wrapper = wrapper = wrap(testObj, {
 
 ```
 
-# Options
+## Options
 ```js
 {
   exclude: [], // object functions, that should be excluded
