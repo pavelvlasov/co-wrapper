@@ -75,7 +75,8 @@ var wrapper = wrapper = wrap(testObj, {
   isEventEmitter: true, // set to true, if object has event emitter functionality
   properties: {
     name: {
-      get: function () {return this._foo}, // getters and setters can be String, that defines source object property, or function
+      get: function () {return this._foo}, // getters and setters can be String,
+      // that defines source object property, or function
       set: '_foo' // function would be run in source object scope
       // other Object.defineProperty parameters
     }
