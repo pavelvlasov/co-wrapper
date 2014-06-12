@@ -7,6 +7,7 @@ module.exports = function(source, options) {
   var wrapper = {},
     options = options || {},
     exclude = options.exclude || [],
+    methods = options.methods || [],
     properties = options.properties || {};
 
   Object.keys(source).forEach(function(key) {
@@ -63,7 +64,8 @@ module.exports = function(source, options) {
   Object.keys(sourcePrototype).forEach(function(key) {
     if (!isFunction(sourcePrototype[key])) return;
     var func = source[key].bind(source);
-    if (exclude.indexOf(key) === -1) {
+    if ((exclude.indexOf(key) === -1) || (methods.length &&
+      (methods.indexOf(key) > -1))) {
       func = thunkify(func);
     }
     wrapper[key] = func;

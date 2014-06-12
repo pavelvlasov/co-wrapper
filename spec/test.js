@@ -11,6 +11,7 @@ describe('Wrapped object', function() {
   it('create', function() {
     wrapper = wrap(testObj, {
       exclude: ['getFooBarSync'],
+      methods: ['getFooBar'],
       isEventEmitter: true,
       properties: {
         foo: {

@@ -72,6 +72,7 @@ var wrapper = wrapper = wrap(testObj, {
 ```js
 {
   exclude: [], // object functions, that should be excluded
+  methods: [], // list of methods to wrap
   isEventEmitter: true, // set to true, if object has event emitter functionality
   properties: {
     name: {

@@ -1,6 +1,6 @@
 {
   "name": "co-wrapper",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Wrap each function in object with a thunk. Useful for generator-based flow control such as co.",
   "main": "index.js",
   "dependencies": {
