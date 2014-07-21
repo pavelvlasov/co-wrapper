@@ -43,7 +43,7 @@ TestClass.prototype.getFooBarSync = function() {
 
 // wrap oroginal object with co-wrapper
 var wrap = require('co-wrapper');
-var wrapper = wrapper = wrap(testObj, {
+var wrapper = wrap(testObj, {
   exclude: ['getFooBarSync'],
   isEventEmitter: true,
   properties: {
